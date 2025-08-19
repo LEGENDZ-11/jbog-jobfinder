@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jborg Jobs – Find Your Next Role</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a href="index.html" class="brand">
+    <img src="assets/logo.jpg" alt="Jborg Intl Company" class="logo">
+    <span>jborg intl company</span>
+  </a>
+  <nav>
+    <a href="jobs.html">Jobs</a>
+    <a href="employer-dashboard.html">Post a Job</a>
+    <a href="login.html" id="nav-login">Login</a>
+    <a href="register.html" id="nav-register">Register</a>
+    <button class="btn small" id="nav-logout" style="display:none">Logout</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Find your next job</h1>
+  <p>Search thousands of opportunities across Africa and beyond.</p>
+  <form class="search-bar" id="searchForm" action="jobs.html">
+    <input type="text" id="q" name="q" placeholder="Job title or keyword">
+    <input type="text" id="loc" name="loc" placeholder="Location (e.g., Lagos, Remote)">
+    <button class="btn" type="submit">Search Jobs</button>
+  </form>
+</section>
+
+<section class="section">
+  <h2>Featured Jobs</h2>
+  <div id="featured-jobs" class="job-grid"></div>
+</section>
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> jborg intl company &middot; Built with ❤ using HTML/CSS/JS</p>
+</footer>
+<script src="js/app.js"></script>
+
+</body>
+</html>

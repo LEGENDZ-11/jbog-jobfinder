@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employer Dashboard – Jborg</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a href="index.html" class="brand">
+    <img src="assets/logo.jpg" alt="Jborg Intl Company" class="logo">
+    <span>jborg intl company</span>
+  </a>
+  <nav>
+    <a href="jobs.html">Jobs</a>
+    <a href="employer-dashboard.html">Post a Job</a>
+    <a href="login.html" id="nav-login">Login</a>
+    <a href="register.html" id="nav-register">Register</a>
+    <button class="btn small" id="nav-logout" style="display:none">Logout</button>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="card">
+    <h1>Post a New Job</h1>
+    <form id="postJobForm">
+      <div class="grid-2">
+        <label>Job Title <input name="title" required></label>
+        <label>Company <input name="company" required></label>
+      </div>
+      <div class="grid-2">
+        <label>Location <input name="location" placeholder="City / Remote" required></label>
+        <label>Type
+          <select name="type" required>
+            <option>Full-time</option>
+            <option>Part-time</option>
+            <option>Contract</option>
+            <option>Internship</option>
+            <option>Remote</option>
+          </select>
+        </label>
+      </div>
+      <div class="grid-2">
+        <label>Category
+          <select name="category" required>
+            <option>Engineering</option>
+            <option>Design</option>
+            <option>Product</option>
+            <option>Marketing</option>
+            <option>Sales</option>
+            <option>Operations</option>
+          </select>
+        </label>
+        <label>Salary Range <input name="salary" placeholder="e.g., ₦400k–₦600k / mo"></label>
+      </div>
+      <label>Job Description
+        <textarea name="description" rows="8" required placeholder="What you'll do, requirements, benefits..."></textarea>
+      </label>
+      <button class="btn" type="submit">Publish Job</button>
+      <p id="postMsg" class="muted"></p>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Your Job Listings</h2>
+    <div id="employer-jobs" class="job-list"></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> jborg intl company &middot; Built with ❤ using HTML/CSS/JS</p>
+</footer>
+<script src="js/app.js"></script>
+
+</body>
+</html>
